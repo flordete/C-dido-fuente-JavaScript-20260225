@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("img/fondo.png");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="funcion1()">Cambiar fondo de la web (1)</button>
+    <button onclick="funcion2()">Cambiar fondo de la web (2)</button>
+    <button onclick="funcion3()">Cambiar color de fondo de la web (1)</button>
+    <button onclick="funcion4()">Cambiar color de fondo de la web (2)</button>
+    <div id="resultado"></div>
+
+    <script>
+        function funcion1() { 
+            // Tu código JS empieza aquí
+            document.body.style.backgroundImage = 'url("img/fondo2.avif")';
+            
+            //document.getElementById("resultado").style
+            // Tu código JS acaba aquí
+        }
+
+        function funcion2() { 
+            // Tu código JS empieza aquí
+            document.body.style.backgroundImage = 'url("img/fondo.png")';
+            
+            //document.getElementById("resultado").style
+            // Tu código JS acaba aquí
+        }
+        
+        function funcion3() { 
+            // Tu código JS empieza aquí
+            document.body.style.backgroundColor = "red";
+            document.body.style.backgroundImage = "none";
+            // Tu código JS acaba aquí
+        }
+        
+        function funcion4() { 
+            // Tu código JS empieza aquí
+            document.body.style.backgroundColor = "green";
+            document.body.style.backgroundImage = "none";
+            // Tu código JS acaba aquí
+        }
+
+    </script>
+
+</body>
+</html>

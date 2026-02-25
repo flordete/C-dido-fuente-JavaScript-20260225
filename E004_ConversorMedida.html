@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funcion()">Conversor de Millas a Kilómetros</button>
+    <div id="resultado"></div>
+
+    <script>
+        function funcion() { 
+            let resultado;
+            
+            // Tu código JS empieza aquí
+            let millas = prompt("Introduce las millas a convertir: ");
+            let km = millas * 1.60934;
+
+            console.log(millas + " millas son " + km + " kilometros"); 
+            resultado = millas + " millas son " + km + " kilometros";
+        
+            // Tu código JS acaba aquí
+
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>

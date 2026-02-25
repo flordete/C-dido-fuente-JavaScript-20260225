@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funcion()">Nombre :D</button>
+    <div id="resultado"></div>
+
+    <script>
+        function funcion() { 
+            // Tu código JS empieza aquí
+            let volumen;
+            const PI = 3.141592;
+            let radio = prompt("Introduce el radio de una esfera: ");
+            
+            // Calculo el volumen de una esfera
+            //volumen = (4 / 3) * 3.14 * (radio ** 3);
+
+            //volumen = (4 / 3) * PI * (radio ** 3);
+            
+            volumen = (4 / 3) * Math.PI * (radio ** 3);
+
+            // Tu código JS acaba aquí
+
+            document.getElementById("resultado").innerHTML = "El volumen de una esfera de radio " + radio + " es " + volumen;
+        }
+    </script>
+</body>
+</html>

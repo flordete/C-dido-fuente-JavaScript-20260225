@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funcion()">Nombre :D</button>
+    <div id="resultado"></div>
+
+    <script>
+        function funcion() { 
+            // Tu código JS empieza aquí
+            let area;
+            
+            let lado = prompt("Introduce el lado de un cuadrado: ");
+            // Calculo el área de un cuadrado de lado 'lado'
+
+            area = lado * lado;
+            area = lado ** 2;
+
+            // Tu código JS acaba aquí
+
+            document.getElementById("resultado").innerHTML = "El área de un cuadrado de lado " + lado + " es " + area;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funcion()"> Introduce tu nota: </button>
+    <div id="resultado"></div>
+
+    <script>
+        function funcion() { 
+            let nota = prompt("Introduce tu la nota de tu examen: ");
+
+            // Tu código JS empieza aquí
+            if (nota <0) {
+                resultado = "La nota no puede ser negativa";
+            } else if (nota >= 0 && nota < 5) {
+                resultado = "Insuficiente";
+            } else if (nota >= 5 && nota < 6) {
+                resultado = "Suficiente";
+            } else if (nota >= 6 && nota < 7) {
+                resultado = "Bien";
+            } else if (nota >= 7 && nota < 9) {
+                resultado = "Notable";
+            } else if (nota >= 9 && nota < 10) {
+                resultado = "Sobresaliente";
+            } else if (nota == 10) {
+                resultado = "Matricula de Honor";
+            } else {
+                resultado = "Nota inválida";
+            }
+        
+            // Tu código JS acaba aquí
+
+            document.getElementById("resultado").innerHTML = resultado;
+    }
+    </script>
+</body>
+</html>

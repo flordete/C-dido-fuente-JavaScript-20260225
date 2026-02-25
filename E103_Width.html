@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #capa {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 500px;
+            border: 1px solid black;
+
+            background-image: linear-gradient(to bottom, red, yellow);
+            transition: 2s;
+            /*display: none;*/
+        }
+    </style>
+</head>
+<body>
+    <button onclick="funcion1()">Mostrar mensaje</button>
+    <button onclick="funcion2()">Ocultar mensaje</button>
+    
+    <div id="capa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga impedit ipsum quibusdam nam necessitatibus ex aliquam accusantium cum omnis. In non harum molestiae molestias iusto ea eligendi autem ratione nobis?
+    Velit aperiam numquam praesentium id minima labore est alias. Doloremque magnam voluptates, tempore rem praesentium accusamus nihil veniam laboriosam minima eos illum laborum, a, quae blanditiis totam! Ullam, odio distinctio?
+    Nostrum optio commodi illo corrupti accusantium, cum excepturi, non animi repudiandae at consequuntur maiores dolorem itaque doloribus deserunt, blanditiis dolores. Quo animi reprehenderit blanditiis asperiores ipsa totam optio commodi. Optio.
+    Consequatur aliquid, natus ratione id asperiores nam voluptatum. Distinctio blanditiis nesciunt ex reiciendis culpa quisquam eos excepturi vel dolore, voluptatibus fuga enim natus libero at quis, dolores qui veritatis sapiente.
+    Odio placeat maxime dicta ab iusto laudantium recusandae itaque reiciendis natus blanditiis perspiciatis deserunt fugiat, aliquid odit, harum similique dolorem! Beatae quos neque possimus ex perspiciatis ea eaque reprehenderit doloribus.</div>
+
+    <script>
+        function funcion1() { 
+            document.getElementById("capa").style.width = '25%';
+        }
+        
+        function funcion2() { 
+            document.getElementById("capa").style.width = '0';
+        }
+    </script>
+
+</body>
+</html>
