@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funcion()">Calculadora</button>
+    <div id="resultado"></div>
+
+    <script>
+        function funcion() { 
+            let numero1 = prompt("Escribe el primer número");
+            let numero2 = prompt("Escribe el segundo número");
+            let operacion = prompt("Escribe la operación que quieres realizar: "+
+            "\n 1) +" +
+            "\n 2) -" +
+            "\n 3) *" +
+            "\n 4) /");
+
+            let resultado;
+            
+            // Tu código JS empieza aquí
+            if (operacion === "+") {
+                resultado = parseFloat(numero1) + parseFloat(numero2);
+            } else if (operacion === "-") {
+                resultado = parseFloat(numero1) - parseFloat(numero2);
+            } else if (operacion === "*") {
+                resultado = parseFloat(numero1) * parseFloat(numero2);
+            } else if (operacion === "/") {
+                if (parseFloat(numero2) !== 0) {
+                    resultado = parseFloat(numero1) / parseFloat(numero2);
+                } else {
+                    resultado = "No se puede dividir por cero.";
+                }
+            } else {
+                resultado = "Operación no válida.";
+            }
+        
+
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>

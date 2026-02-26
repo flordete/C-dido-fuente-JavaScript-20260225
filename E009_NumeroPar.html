@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funcion()">Numero Par o Impar</button>
+    <div id="resultado"></div>
+
+    <script>
+        function funcion() { 
+            let num = prompt ("Escribe un número");
+            let resultado;
+            
+            // Tu código JS empieza aquí
+            if (num % 2 === 0) {
+                resultado = "El número " + num + " es par";
+            } else {
+                resultado = "El número " + num + " es impar";
+            } 
+            // Tu código JS acaba aquí
+
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>
