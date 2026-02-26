@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funcion()">Click aquí!</button>
+    <div id="resultado"></div>
+
+    <script>
+        function funcion() { 
+            let numero1 = prompt("Escribe el primer número");
+            let numero2 = prompt("Escribe el segundo número");
+            
+            // Tu código JS empieza aquí
+            if (numero1 > numero2) {
+                resultado = "El número mayor es: " + numero1;
+            } else if (numero2 > numero1) {
+                resultado = "El número mayor es: " + numero2;
+            } else {
+                resultado = "Ambos números son iguales.";
+            }
+            // Tu código JS acaba aquí
+
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>
