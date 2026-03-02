@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funcion()">Tabla de Multiplicar</button>
+    <div id="resultado"></div>
+
+    <script>
+        function funcion() { 
+            let num = prompt("Escribe un número");
+            let i, salida = "";
+            for (i = 0; i <= 10; i++) {
+            salida = salida + num + " x " + i + " = " + (Math.round(num*i * 100)/100).toFixed(2) + "<br>";
+            }
+            document.getElementById("resultado").innerHTML = salida;
+        }
+    </script>
+</body>
+</html>

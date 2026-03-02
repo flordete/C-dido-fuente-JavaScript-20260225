@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funcion()">Tabla de Multiplicar</button>
+    <div id="resultado"></div>
+
+    <script>
+        function funcion() { 
+            let i, salida = "";
+            for (i = 0; i <= 10; i++) {
+                for (j = 0; j <= 10; j++) {
+                    salida = salida + i + " x " + j + " = " + (i*j) + "<br>";
+                }
+
+            salida = salida + "<br>";
+            }
+            document.getElementById("resultado").innerHTML = salida;
+        }
+    </script>
+</body>
+</html>

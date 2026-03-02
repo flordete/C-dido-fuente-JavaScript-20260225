@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funcion()">Multiplos de 3 y 7</button>
+    <div id="resultado"></div>
+
+    <script>
+        function funcion() { 
+            let salida = "", i;
+            for (i = 1; i <= 100; i++) {
+                if(i%3 === 0 && i%7 === 0) {
+                    salida += i + " es múltiplo de 3 y de 7<br>";
+                } else if(i%3 === 0) {
+                    salida += i + " es múltiplo de 3<br>";
+                } else if(i%7 === 0) {
+                    salida += i + " es múltiplo de 7<br>";
+                }                
+            }
+            document.getElementById("resultado").innerHTML = salida;
+        }
+    </script>
+</body>
+</html>
